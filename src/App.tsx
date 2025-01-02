@@ -19,7 +19,7 @@ function App() {
 
   return (
     <main>
-      <h2>Great things are in the works — stay tuned.</h2>
+      <h2>Great things are in the works — stay tuned!</h2>
     </main>
   );
 }
