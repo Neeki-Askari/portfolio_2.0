@@ -2,6 +2,10 @@
 //import type { Schema } from "../amplify/data/resource";
 //import { generateClient } from "aws-amplify/data";
 
+import { useContext } from "react";
+import { ThemeContext } from "./context/themeContext";
+import HomePage from "./components/HomePage";
+
 //const client = generateClient<Schema>();
 
 function App() {
@@ -17,9 +21,13 @@ function App() {
   //  client.models.Todo.create({ content: window.prompt("Todo content") });
   //}
 
+  const {theme} = useContext(ThemeContext);
+
   return (
-    <main>
-      <h2>Great things are in the works — stay tuned!</h2>
+    <main className={theme === 'dark' ? 'dark-mode' : 'light-mode'}>
+      <div className="app-container">
+      <HomePage />
+      </div>
     </main>
   );
 }

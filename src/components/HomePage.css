@@ -1,0 +1,6 @@
+.home-page-container {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    z-index: 5;
+  }
