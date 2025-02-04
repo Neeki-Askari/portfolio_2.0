@@ -2,7 +2,7 @@
 
 html, body {
   margin: 0;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, Garamond, sans-serif;
 }
 
 main {
@@ -12,6 +12,9 @@ main {
   align-items: center;
   text-align: center;
   color: white;
+  background-image: url("light-wool.png");
+  background-color:rgb(10, 20, 38);
+  font-family: Garamond;
 }
 
 
