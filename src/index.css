@@ -12,7 +12,7 @@ main {
   align-items: center;
   text-align: center;
   color: white;
-  background-image: url("light-wool.png");
+  background-image: url("/light-wool.png");
   background-color:rgb(10, 20, 38);
   font-family: Garamond;
 }
