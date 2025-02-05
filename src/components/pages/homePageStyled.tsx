@@ -3,7 +3,6 @@ import { DeviceBreakpoints } from '../constants/styledConstants';
 import { Button } from '@mui/material';
 
 export const HomePageOuterContainer = styled.div`
-  height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -14,8 +13,8 @@ export const HomePageOuterContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: auto;
-    margin: 25px;
+    width: 100%;
+    margin-top: 50px;
   }
   
 `;
@@ -33,7 +32,6 @@ export const PhotoContainer = styled.img`
 `;
 
 export const IntroContainer = styled.div`
-
  border-radius: 4px;
   text-align: center;
   display: flex;

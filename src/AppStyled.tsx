@@ -64,19 +64,11 @@ export const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     z-index: 2;
     @media (max-width: ${DeviceBreakpoints.MOBILE}){
         position: relative;
-        height: 150px;
-        margin-top: -25px;
-        margin-bottom: -25px;
         justify-content: center;
       }
-   @media (max-height: 460px){
-        position: fixed;
-        height: 175px;
-        margin-top: -50px;
+   @media (orientation: landscape){
+        position: relative;
         justify-content: center;
-      }
-    @media (min-width: 461px){
-        position: fixed;
       }
   `
   

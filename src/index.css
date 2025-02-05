@@ -1,19 +1,21 @@
 
 
 html, body {
-  margin: 0;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, Garamond, sans-serif;
-}
-
-main {
+  width: 100vw;
+  height: auto;
+  margin: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-family: Garamond;
-  width: 100vw;
-  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .dark {
