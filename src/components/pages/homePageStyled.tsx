@@ -4,6 +4,7 @@ import { Button } from '@mui/material';
 
 //light mode #ccbebf
 export const HomePageOuterContainer = styled.div`
+  z-index: 5;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -32,7 +33,7 @@ export const PhotoContainer = styled.img`
 `;
 
 export const IntroContainer = styled.div`
- background-color: rgb(10, 20, 38, 0.5);
+
  border-radius: 4px;
   text-align: center;
   display: flex;
@@ -42,6 +43,7 @@ export const IntroContainer = styled.div`
     @media (min-width: 431px){
       padding: 30px;
   }
+  background-color: ${props => (props.theme === 'dark' ? 'rgb(10, 20, 38, 0.5)' : 'rgb(220,220,220, 0.3)')};
 `
 export const Header = styled.h2`
   font-weight: bold;
@@ -71,7 +73,7 @@ font-size: 1.25em;
 
 export const LinksContainer = styled.div`
 display: flex;
-gap: 25px;
+gap: 8px;
 max-width: 485px;
   @media (max-width: ${DeviceBreakpoints.MOBILE}){
     flex-direction: column;
@@ -80,9 +82,9 @@ max-width: 485px;
   }
 `
 export const ButtonStyled = styled(Button)`
-  color: #FFFFFF;
-  border-color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  border: 1px solid ${props => (props.theme === 'dark' ? 'white' : 'black')};
+  color: ${props => (props.theme === 'dark' ? 'white' : 'black')};
+  background-color: rgb(220,220,220, 0.3);
   &:hover {
     background-color: rgb(192,192,192, 0.2);
   }

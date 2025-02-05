@@ -11,10 +11,20 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: Garamond;
+}
+
+.dark {
   color: white;
   background-image: url("/light-wool.png");
   background-color:rgb(10, 20, 38);
-  font-family: Garamond;
 }
+
+.light {
+  color: black;
+  background-image: url("/light-wool.png");
+  background-color:rgba(204, 190, 191)
+}
+
 
 
