@@ -40,7 +40,7 @@ export const IntroContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    @media (min-width: 431px){
+    @media (min-width: 461px){
       padding: 30px;
   }
   background-color: ${props => (props.theme === 'dark' ? 'rgb(10, 20, 38, 0.5)' : 'rgb(220,220,220, 0.3)')};

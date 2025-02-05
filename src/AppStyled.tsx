@@ -69,7 +69,13 @@ export const MaterialUISwitch = styled(Switch)(({ theme }) => ({
         margin-bottom: -25px;
         justify-content: center;
       }
-    @media (min-width: 431px){
+   @media (max-height: 460px){
+        position: fixed;
+        height: 175px;
+        margin-top: -50px;
+        justify-content: center;
+      }
+    @media (min-width: 461px){
         position: fixed;
       }
   `

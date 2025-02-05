@@ -12,6 +12,8 @@ main {
   align-items: center;
   text-align: center;
   font-family: Garamond;
+  width: 100vw;
+  height: auto;
 }
 
 .dark {
