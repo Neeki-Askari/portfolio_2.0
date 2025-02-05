@@ -1,6 +1,6 @@
 
 import HomePage from "./components/pages/homePage";
-import { MaterialUISwitch } from "./AppStyled";
+import { MaterialUISwitch, SwitchContainer } from "./AppStyled";
 import { useContext } from "react";
 import { ThemeContext, ThemeContextValues } from "./context/themeContext";
 
@@ -10,13 +10,7 @@ function App() {
   return (
     <main className={theme}>
       <div>
-      <div style={{
-        "display": "flex",
-        "justifyContent": "flex-end",
-        "width": "100vw",
-        "zIndex": "2",
-        "position": "fixed"
-      }}>
+      <SwitchContainer>
       <MaterialUISwitch 
       defaultChecked    
       onChange={() => toggleTheme()}
@@ -24,7 +18,7 @@ function App() {
         "margin": "75px;"
       }}
       />
-      </div>
+      </SwitchContainer>
       <HomePage />
       </div>
     </main>

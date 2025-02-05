@@ -1,4 +1,4 @@
-import { createContext, useState, ReactNode, useEffect} from 'react';
+import { createContext, useState, ReactNode} from 'react';
 
 export interface ThemeContextValues {
     theme: string;
@@ -15,10 +15,6 @@ interface ThemeProviderProps {
 
 const ThemeProvider: React.FC<ThemeProviderProps> = ({children}) => {
     const [theme, setTheme] = useState('dark');
-
-    useEffect(() => {
-        console.log('theme: ', theme)
-      }, [theme])
 
     const toggleTheme = () => {
         setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))

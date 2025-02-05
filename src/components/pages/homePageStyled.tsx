@@ -2,9 +2,7 @@ import styled from '@emotion/styled';
 import { DeviceBreakpoints } from '../constants/styledConstants';
 import { Button } from '@mui/material';
 
-//light mode #ccbebf
 export const HomePageOuterContainer = styled.div`
-  z-index: 5;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -15,20 +13,22 @@ export const HomePageOuterContainer = styled.div`
   @media (max-width: ${DeviceBreakpoints.MOBILE}){
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    height: 100%;
+    width: auto;
+    margin: 25px;
   }
+  
 `;
 
 export const PhotoContainer = styled.img`
-  max-width: 400px;
+  max-width: auto;
   max-height: 400px;
   min-height: 175px;
   min-width: 175px;
   border-radius: 50%;
-  z-index: 3;
+  object-fit: cover;
   @media (max-width: ${DeviceBreakpoints.MOBILE}){
-      width: 250px;
-      height: 250px;
+    width: 300px;
   }
 `;
 
