@@ -3,8 +3,6 @@ import { Card } from '@mui/material';
 import { DeviceBreakpoints } from '../../constants/styledConstants';
 
 export const ProjectsOuterContainer = styled.div`
-    width: 100vw;
-    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +22,8 @@ export const ProjectsInnerContainer = styled.div`
     display: flex;
     flex-direction: row;
     gap: 36px;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
+    padding: 1.5rem;
     @media (max-width: ${DeviceBreakpoints.DESKTOP}) {
         flex-direction: column;
     }
