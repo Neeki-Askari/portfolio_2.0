@@ -4,11 +4,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { ThemeContext, ThemeContextValues } from "../../context/themeContext";
 import { useContext } from "react";
+import { useOnIntersect } from "../../Intersect";
 
 const HomePage: React.FC = () => {
-    const {theme} = useContext(ThemeContext) as ThemeContextValues
+    const {theme} = useContext(ThemeContext) as ThemeContextValues;
+    const [hiddenRef, isIntersecting] = useOnIntersect();
+
     return (
-        <HomePageOuterContainer>
+        <HomePageOuterContainer ref={hiddenRef} className={`${"home"} ${isIntersecting ? "fadeIn" : "hidden"}`}>
             <PhotoContainer src="cropped.png"/>
             <IntroContainer theme={theme}>
                 <HeaderContainer>

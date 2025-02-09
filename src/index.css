@@ -30,5 +30,23 @@ main {
   background-color:rgba(204, 190, 191)
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.fadeIn {
+  animation: fadeIn 800ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
