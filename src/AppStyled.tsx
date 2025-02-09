@@ -1,5 +1,4 @@
 import { styled, Switch } from "@mui/material";
-import { DeviceBreakpoints } from "./components/constants/styledConstants";
 import emotionStyled from '@emotion/styled';
 
 export const MaterialUISwitch = styled(Switch)(({ theme }) => ({
@@ -59,16 +58,9 @@ export const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   }));
   export const SwitchContainer = emotionStyled.div`
     display: flex;
-    justify-content: flex-end;
     width: 100vw;
     z-index: 2;
-    @media (max-width: ${DeviceBreakpoints.MOBILE}){
-        position: relative;
-        justify-content: center;
-      }
-   @media (orientation: landscape){
-        position: relative;
-        justify-content: center;
-      }
+    position: relative;
+    justify-content: center;
   `
   

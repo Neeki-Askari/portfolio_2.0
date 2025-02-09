@@ -3,6 +3,7 @@ import HomePage from "./components/pages/homePage";
 import { MaterialUISwitch, SwitchContainer } from "./AppStyled";
 import { useContext, useEffect } from "react";
 import { ThemeContext, ThemeContextValues } from "./context/themeContext";
+import Projects from "./components/pages/projects/Projects";
 
 function App() {
   const {theme, toggleTheme} = useContext(ThemeContext) as ThemeContextValues;
@@ -21,6 +22,7 @@ function App() {
         />
         </SwitchContainer>
         <HomePage />
+        <Projects />
     </main>
   );
 }

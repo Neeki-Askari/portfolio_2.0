@@ -1,4 +1,6 @@
 
 export const DeviceBreakpoints = {
-    MOBILE: "460px"
+    MOBILE: "479px",
+    TABLET: "787px",
+    DESKTOP: "1200px",
 }

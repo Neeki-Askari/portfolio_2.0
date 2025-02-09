@@ -10,7 +10,7 @@ export const HomePageOuterContainer = styled.div`
   justify-content: center;
   text-align: center;
   gap: 50px; 
-  @media (max-width: ${DeviceBreakpoints.MOBILE}){
+  @media (max-width: ${DeviceBreakpoints.DESKTOP}){
     flex-direction: column;
     justify-content: center;
     height: 100%;
@@ -22,7 +22,7 @@ export const HomePageOuterContainer = styled.div`
 
 export const PhotoContainer = styled.img`
   max-width: auto;
-  max-height: 400px;
+  max-height: 600px;
   min-height: 175px;
   min-width: 175px;
   border-radius: 50%;

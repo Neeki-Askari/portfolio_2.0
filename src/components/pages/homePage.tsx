@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
     const {theme} = useContext(ThemeContext) as ThemeContextValues
     return (
         <HomePageOuterContainer>
-            <PhotoContainer src="cropped.jpeg"/>
+            <PhotoContainer src="cropped.png"/>
             <IntroContainer theme={theme}>
                 <HeaderContainer>
                     <Header>Hello, my name is </Header>
