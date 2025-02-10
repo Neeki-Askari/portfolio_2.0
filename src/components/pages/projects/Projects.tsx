@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
         }
     ]
     return(
-        <ProjectsOuterContainer ref={hiddenRef} className={`${"projects"} ${isIntersecting ? "fadeIn" : "hidden"}`}>
+        <ProjectsOuterContainer ref={hiddenRef} className={`projects ${isIntersecting ? "fadeIn" : "hidden"}`}>
             <Header>Personal Projects</Header>
             <ProjectsInnerContainer>
                 {projectInformation.map((project, i) => {

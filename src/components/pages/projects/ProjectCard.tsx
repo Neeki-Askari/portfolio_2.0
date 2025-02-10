@@ -29,17 +29,6 @@ const ProjectCard: React.FC<{project: ProjectCardType}> = ({project}) => {
         <Button size="small" href={project.sourceCodeUrl}>GitHub</Button>
     </CardStyled>
   );
-  //return (
-  //  <div
-  //  style={{
-  //    "border": "1px solid white",
-  //    "width": "100px",
-  //    "height": "100px"
-  //  }}
-  //  >
-      
-  //  </div>
-  //)
 }
 
 export default ProjectCard;

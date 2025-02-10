@@ -3,6 +3,7 @@ import { Card } from '@mui/material';
 import { DeviceBreakpoints } from '../../constants/styledConstants';
 
 export const ProjectsOuterContainer = styled.div`
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;

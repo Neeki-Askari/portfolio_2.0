@@ -35,8 +35,9 @@ main {
 }
 
 .fadeIn {
-  animation: fadeIn 800ms;
+  animation: fadeIn ease 800ms;
 }
+
 
 @keyframes fadeIn {
   0% {
@@ -49,4 +50,24 @@ main {
   }
 }
 
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropIn {
+  animation: dropIn 800ms;
+}
+
+.show-nav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
 
