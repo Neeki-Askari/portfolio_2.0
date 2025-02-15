@@ -26,3 +26,6 @@ export const LinksContainer = styled.div`
 export const DividerStyled = styled(Divider)`
     border-color: ${props => (props.theme === 'dark' ? 'rgb(10, 20, 38)' : 'rgb(220,220,220)')};
 `
+export const LinkWrapper = styled.div`
+    cursor: pointer;
+`
