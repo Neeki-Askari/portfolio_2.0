@@ -3,7 +3,7 @@
 html, body {
   width: 100vw;
   height: auto;
-  margin: none;
+  margin: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,5 +30,52 @@ main {
   background-color:rgba(204, 190, 191)
 }
 
+.fadeIn {
+  animation: fadeIn ease 800ms;
+}
 
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+.hide-nav {
+  position: sticky;
+  top: 0;
+  animation: dropOut 500ms forwards;
+}
+.show-nav {
+  position: sticky;
+  top: 0;
+  animation: dropIn 500ms ease-in;
+}
 

@@ -7,11 +7,13 @@ import Typography from '@mui/material/Typography';
 import { ProjectCardType } from '../../../models/projectCardType';
 import { CardStyled } from './ProjectsStyled';
 import { ThemeContext, ThemeContextValues } from '../../../context/themeContext';
+import { CardActionArea } from '@mui/material';
 
 const ProjectCard: React.FC<{project: ProjectCardType}> = ({project}) => {
   const {theme} = useContext(ThemeContext) as ThemeContextValues;
 
   return (
+    <CardActionArea onClick={() => window.open(project.sourceCodeUrl, "_blank")}>
     <CardStyled theme={theme}>
       <CardMedia
         sx={{ height: 140 }}
@@ -26,20 +28,10 @@ const ProjectCard: React.FC<{project: ProjectCardType}> = ({project}) => {
           {project.description}
         </Typography>
       </CardContent>
-        <Button size="small" href={project.sourceCodeUrl}>GitHub</Button>
+        <Button size="small">GitHub</Button>
     </CardStyled>
+    </CardActionArea>
   );
-  //return (
-  //  <div
-  //  style={{
-  //    "border": "1px solid white",
-  //    "width": "100px",
-  //    "height": "100px"
-  //  }}
-  //  >
-      
-  //  </div>
-  //)
 }
 
 export default ProjectCard;
