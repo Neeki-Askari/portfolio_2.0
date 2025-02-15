@@ -5,6 +5,7 @@ import { useContext, useEffect, useState } from "react";
 import { ThemeContext, ThemeContextValues } from "./context/themeContext";
 import Projects from "./components/pages/projects/Projects";
 import { NavBar } from "./components/NavBar";
+import Footer from "./components/Footer";
 
 function App() {
   const {theme, toggleTheme} = useContext(ThemeContext) as ThemeContextValues;
@@ -38,6 +39,7 @@ function App() {
         </SwitchContainer>
         <HomePage />
         <Projects />
+        <Footer />
     </main>
   );
 }

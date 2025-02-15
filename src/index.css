@@ -3,7 +3,7 @@
 html, body {
   width: 100vw;
   height: auto;
-  margin: none;
+  margin: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
