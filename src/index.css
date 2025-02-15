@@ -30,10 +30,6 @@ main {
   background-color:rgba(204, 190, 191)
 }
 
-.hidden {
-  opacity: 0;
-}
-
 .fadeIn {
   animation: fadeIn ease 800ms;
 }
@@ -61,13 +57,25 @@ main {
   }
 }
 
-.dropIn {
-  animation: dropIn 800ms;
+@keyframes dropOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
 }
 
+.hide-nav {
+  position: sticky;
+  top: 0;
+  animation: dropOut 500ms forwards;
+}
 .show-nav {
   position: sticky;
   top: 0;
-  overflow: hidden;
+  animation: dropIn 500ms ease-in;
 }
 

@@ -8,7 +8,7 @@ export const NavBar: React.FC<{showNavBar: boolean}> = ({showNavBar}) => {
     
     return(
         <NavBarOuterContainer 
-        className={`navbar ${showNavBar ? 'show-nav dropIn' : 'hidden'}`}
+        className={`navbar ${showNavBar ? 'show-nav' : 'hide-nav'}`}
         theme={theme}
         >
             <NavBarContentContainer>
