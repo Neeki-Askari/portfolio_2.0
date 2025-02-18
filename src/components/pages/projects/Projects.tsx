@@ -1,7 +1,7 @@
 import { useOnIntersect } from "../../../Intersect";
 import { ProjectCardType } from "../../../models/projectCardType"
 import ProjectCard from "./ProjectCard"
-import { Header, ProjectsInnerContainer, ProjectsOuterContainer } from "./ProjectsStyled"
+import { Header, ProjectsInnerContainer, ProjectsOuterContainer, SubHeader } from "./ProjectsStyled"
 
 const Projects: React.FC = () => {
     const [hiddenRef, isIntersecting] = useOnIntersect();
@@ -29,6 +29,7 @@ const Projects: React.FC = () => {
     return(
         <ProjectsOuterContainer ref={hiddenRef} className={`projects ${isIntersecting ? "fadeIn" : "hidden"}`}>
             <Header>Personal Projects</Header>
+            <SubHeader>Click on each project to view more details on GitHub</SubHeader>
             <ProjectsInnerContainer>
                 {projectInformation.map((project, i) => {
                     return (

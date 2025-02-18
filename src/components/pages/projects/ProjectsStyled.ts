@@ -11,6 +11,10 @@ export const ProjectsOuterContainer = styled.div`
 `
 export const Header = styled.h1`
     font-size: 2.5rem;
+    margin: 0px;
+`
+export const SubHeader = styled.p`
+    margin: 0px;
 `
 export const CardStyled = styled(Card)`
     max-width: 425px;

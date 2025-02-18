@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { MaterialUISwitch } from '../AppStyled';
-import { NavBarContentContainer, NavBarOuterContainer } from './NavBarStyled';
+import { HeaderName, NavBarContentContainer, NavBarOuterContainer } from './NavBarStyled';
 import { ThemeContext, ThemeContextValues } from '../context/themeContext';
 
 export const NavBar: React.FC<{showNavBar: boolean}> = ({showNavBar}) => {
@@ -12,7 +12,10 @@ export const NavBar: React.FC<{showNavBar: boolean}> = ({showNavBar}) => {
         theme={theme}
         >
             <NavBarContentContainer>
-                <h2>Neeki</h2>
+                <HeaderName onClick={() => window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })}>Neeki</HeaderName>
                 <MaterialUISwitch 
                         defaultChecked    
                         onChange={() => toggleTheme()}

@@ -2,7 +2,6 @@ import * as React from 'react';
 import {useContext} from 'react';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { ProjectCardType } from '../../../models/projectCardType';
 import { CardStyled } from './ProjectsStyled';
@@ -28,7 +27,6 @@ const ProjectCard: React.FC<{project: ProjectCardType}> = ({project}) => {
           {project.description}
         </Typography>
       </CardContent>
-        <Button size="small">GitHub</Button>
     </CardStyled>
     </CardActionArea>
   );

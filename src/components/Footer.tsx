@@ -27,10 +27,11 @@ const Footer: React.FC = () => {
             <DividerStyled theme={theme}/>
             <LinksContainer>
                 {
-                    iconList.map((linkInfo) => {
+                    iconList.map((linkInfo, i) => {
                         return (
                             <LinkWrapper
                             onClick={() => window.open(linkInfo.url, "_blank")}
+                            key={i}
                             >
                                 {linkInfo.icon}
                             </LinkWrapper>

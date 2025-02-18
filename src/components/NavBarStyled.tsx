@@ -15,3 +15,6 @@ export const NavBarContentContainer = styled.div`
     height: 100%;
     width: 95%;
 `
+export const HeaderName = styled.h2`
+    cursor: pointer;
+`

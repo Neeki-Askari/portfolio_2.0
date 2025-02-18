@@ -68,6 +68,10 @@ main {
   }
 }
 
+.hidden {
+  opacity: 0;
+}
+
 .hide-nav {
   position: sticky;
   top: 0;

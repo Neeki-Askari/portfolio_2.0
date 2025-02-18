@@ -4,7 +4,7 @@ import { Button } from '@mui/material';
 
 export const HomePageOuterContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +22,7 @@ export const HomePageOuterContainer = styled.div`
 
 export const PhotoContainer = styled.img`
   max-width: auto;
-  max-height: 600px;
+  max-height: 400px;
   min-height: 175px;
   min-width: 175px;
   border-radius: 50%;
