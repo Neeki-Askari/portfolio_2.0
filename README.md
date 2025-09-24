@@ -3,6 +3,8 @@
 A production-ready portfolio website built with React + Vite app deployed with **AWS Amplify Hosting**.  
 Amplify builds the app, stores static assets in **S3**, and serves them globally via **CloudFront (HTTPS/SSL/TLS)**.
 
+🌐 **Live Website:** [https://neekiaskari.com](https://neekiaskari.com)
+
 ## Tech Stack
 
 - **Frontend:** React 18, TypeScript, Vite, MUI, Emotion
