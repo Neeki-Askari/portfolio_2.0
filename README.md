@@ -1,25 +1,37 @@
-## AWS Amplify React+Vite Starter Template
+# React + Vite on AWS Amplify (S3 + CloudFront)
 
-This repository provides a starter template for creating applications using React+Vite and AWS Amplify, emphasizing easy setup for authentication, API, and database capabilities.
+A production-ready portfolio website built with React + Vite app deployed with **AWS Amplify Hosting**.  
+Amplify builds the app, stores static assets in **S3**, and serves them globally via **CloudFront (HTTPS/SSL/TLS)**.
 
-## Overview
+## Tech Stack
 
-This template equips you with a foundational React application integrated with AWS Amplify, streamlined for scalability and performance. It is ideal for developers looking to jumpstart their project with pre-configured AWS services like Cognito, AppSync, and DynamoDB.
+- **Frontend:** React 18, TypeScript, Vite, MUI, Emotion
+- **AWS (Hosting):** Amplify Hosting → S3 (origin) + CloudFront (CDN, HTTPS)
+- **AWS (Optional Backend):** Cognito (Auth), AppSync (GraphQL API), DynamoDB (DB), CloudWatch (logs)
+- **Tooling:** ESLint, TypeScript, @aws-amplify/ui-react, aws-amplify
 
-## Features
+## Quick Start
 
-- **Authentication**: Setup with Amazon Cognito for secure user authentication.
-- **API**: Ready-to-use GraphQL endpoint with AWS AppSync.
-- **Database**: Real-time database powered by Amazon DynamoDB.
+```bash
+# 1) Install
+npm install
 
-## Deploying to AWS
+# 2) Run locally
+npm run dev
+# -> http://localhost:5173 (Vite default)
 
-For detailed instructions on deploying your application, refer to the [deployment section](https://docs.amplify.aws/react/start/quickstart/#deploy-a-fullstack-app-to-aws) of our documentation.
+# 3) Build for production
+npm run build
+# Outputs to: dist/
 
-## Security
+# 4) Preview the production build locally
+npm run preview
+```
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+# Accessibility & Performance
 
-## License
+Vite build outputs modern, optimized bundles in dist/.
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+CloudFront caches globally for low latency; S3 is the origin.
+
+Use Lighthouse (or npm run preview) to validate performance before deploys.
