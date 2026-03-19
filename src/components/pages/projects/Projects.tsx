@@ -14,10 +14,10 @@ const Projects: React.FC = () => {
   const projectInformation: ProjectCardType[] = [
     {
       projectName: "SmartPlates",
-      image: "/SmartPlates.png",
+      image: "/smartPlates.png",
       description:
         "Full stack application using Typescript, ReactJS, and ASP.NET to create and manage recipes, meal plans, and grocery lists.",
-      sourceCodeUrl: "https://github.com/Neeki-Askari/",
+      sourceCodeUrl: "https://github.com/Neeki-Askari/SmartPlates",
     },
     {
       projectName: "Med-Buddy",
